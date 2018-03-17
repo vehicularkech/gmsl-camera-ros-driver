@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<package>
+  <name>gmsl_camera</name>
+  <version>0.0.0</version>
+  <description>The gmsl_camera package</description>
+
+  <maintainer email="kevin.chen@vehicular.ai">kevin.chen</maintainer>
+
+  <license>GPLv3</license>
+  <buildtool_depend>catkin</buildtool_depend>
+  <build_depend>cv_bridge</build_depend>
+  <build_depend>image_transport</build_depend>
+  <build_depend>camera_info_manager</build_depend>
+  <build_depend>libglew-dev</build_depend>
+  <build_depend>roscpp</build_depend>
+  <build_depend>sensor_msgs</build_depend>
+  <build_depend>std_msgs</build_depend>
+  <run_depend>cv_bridge</run_depend>
+  <run_depend>image_transport</run_depend>
+  <run_depend>camera_info_manager</run_depend>
+  <run_depend>libglew-dev</run_depend>
+  <run_depend>roscpp</run_depend>
+  <run_depend>sensor_msgs</run_depend>
+  <run_depend>std_msgs</run_depend>
+
+  <build_depend>nodelet</build_depend>
+  <run_depend>nodelet</run_depend>
+  <export>
+    <nodelet plugin="${prefix}/cv_connection_nodelet.xml" />
+  </export>
+
+</package>
